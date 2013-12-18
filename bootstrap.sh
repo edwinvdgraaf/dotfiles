@@ -6,7 +6,7 @@ function errorExit() {
 
 function copyDotFiles() {
 	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
-		--exclude "README" --exclude "brew/" --exclude "shell/" -av --no-perms . ~
+		--exclude "README" --exclude "assets/" --exclude "brew/" --exclude "shell/" -av --no-perms . ~
 	source ~/.zshrc
 }
 
@@ -24,14 +24,20 @@ else
 fi
 unset copyDotFiles
 
-# Install homebrew
-sh brew/install.sh
+if [ "$(uname)" == "Darwin" ]; then
+	# Install homebrew
+	sh brew/install.sh
 
-# Install brew packages
-# Let's see if everything is allright
-if brew doctor; then
-	brew bundle brew/Brewfile
-else
-	error_exit "Brew didn't install correct"
+	# Install brew packages
+	# Let's see if everything is allright
+	if brew doctor; then
+		brew bundle brew/Brewfile
+	else
+		error_exit "Brew didn't install correct"
+	fi
+
+	# Install apps with the help of cask
+	sh brew/cask.sh
 fi
+
 
