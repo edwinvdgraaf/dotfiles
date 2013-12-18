@@ -17,7 +17,7 @@ done
 unset file
 
 # Paths
-export PATH="/Users/edwin/bin:/usr/local/share/npm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11R6/bin"
+export PATH="/Users/edwin/.bin:/usr/local/share/npm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11R6/bin"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
