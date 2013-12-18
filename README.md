@@ -4,8 +4,8 @@ While heavily insipred on all other peoples dotfiles on github. Decided to start
 
 ## Installation
 
-git clone <repo>
-./bootstrap.sh
+	git clone <repo>
+	./bootstrap.sh
 
 ## About
 
@@ -20,6 +20,11 @@ git clone <repo>
 	> 
 
 4. 
+
+## TODO 
+
+* Add sublime config
+* Package control sublime syncing
 
 ## Thanks to…
 
