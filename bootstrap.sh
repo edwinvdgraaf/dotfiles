@@ -10,6 +10,30 @@ function copyDotFiles() {
 	source ~/.zshrc
 }
 
+# Use brew to install dependecies
+function brew() {
+	if [ "$(uname)" == "Darwin" ]; then
+		
+		if !brew; then
+		  # Install homebrew
+		  sh brew/install.sh
+		fi
+
+
+		# Install brew packages
+		# Let's see if everything is allright
+		if brew doctor; then
+			brew bundle brew/Brewfile
+		else
+			error_exit "Brew didn't install correct"
+		fi
+
+		# Install apps with the help of cask
+		sh brew/cask.sh
+	fi
+}
+
+
 # Setup zsh
 sh shell/init.sh
 
@@ -24,20 +48,9 @@ else
 fi
 unset copyDotFiles
 
-if [ "$(uname)" == "Darwin" ]; then
-	# Install homebrew
-	sh brew/install.sh
-
-	# Install brew packages
-	# Let's see if everything is allright
-	if brew doctor; then
-		brew bundle brew/Brewfile
-	else
-		error_exit "Brew didn't install correct"
-	fi
-
-	# Install apps with the help of cask
-	sh brew/cask.sh
+if [ "$1" == "--full-pull" ]; then
+	brew
 fi
+
 
 

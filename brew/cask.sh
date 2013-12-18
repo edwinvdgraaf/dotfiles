@@ -15,6 +15,7 @@ installcask iterm2
 installcask sourcetree
 installcask spotify
 installcask sublime-text
+installcask textmate
 installcask the-unarchiver
 installcask transmission
 installcask virtualbox
