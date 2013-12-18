@@ -24,7 +24,7 @@ install git
 install imagemagick
 install tree
 
-# install node
+install node
 install rbenv 
 install ruby-build
 
