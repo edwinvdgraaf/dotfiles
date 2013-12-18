@@ -6,7 +6,7 @@ function errorExit() {
 
 function copyDotFiles() {
 	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
-		--exclude "README" --exclude "assets/" --exclude "brew/" --exclude "shell/" -av --no-perms . ~
+		--exclude "README.md" --exclude "assets/" --exclude "brew/" --exclude "shell/" -av --no-perms . ~
 	source ~/.zshrc
 }
 

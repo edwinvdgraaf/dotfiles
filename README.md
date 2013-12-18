@@ -8,26 +8,25 @@ While being heavily inspired on all example dotfiles configurations on GitHub, I
 	./bootstrap.sh
 
 ### Mac OSX
-For OSX extra brew files are suppplied to setup an development environment quickly. It's advicesable at this point to make sure Xcode and Xcode developer tools are installed a priori the installation of the brew packages. Xcode can be easily installed from the App Store, the developers tools can be installed by running `xcode-select --install`. Afterwards brew install can be runned with:
+For OSX extra brew files are supplied to setup an development environment quickly. It's advisable at this point to make sure Xcode and Xcode developer tools are installed a priori the installation of the brew packages. Xcode can be easily installed from the App Store, the developers tools can be installed by running `xcode-select --install`. Afterwards run:
 
 	./bootstrap.sh --full-pull
 
 
 ## About
 
+These dotfiles bring the following near you:
+
+0. Move dotfiles
 1. Install homebrew
-	
-
 2. Install homebrew packages
-
 3. Install applications
-
-	> Source tree
 	> 
+4. Setup sensible defaults for osx
+5. Setup configuration files for sublime
 
-4. 
-
-## TODO 
+## TODO
+These files are far from done… 
 
 * Add sublime config
 * Package control sublime syncing
