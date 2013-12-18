@@ -1,11 +1,17 @@
 # Edwin’s dotfiles
 
-While heavily insipred on all other peoples dotfiles on github. Decided to start my own, to understand it better however still heavily inspired on [Mathias' dotfiles](https://github.com/mathiasbynens/dotfiles).
+While being heavily inspired on all example dotfiles configurations on GitHub, I decided to start my own to understand it better. However still much is based on [Mathias' dotfiles](https://github.com/mathiasbynens/dotfiles). These files contain the basic setup for zsh based on oh-my-zsh with the great agnoster theme. 
 
 ## Installation
 
 	git clone <repo>
 	./bootstrap.sh
+
+### Mac OSX
+For OSX extra brew files are suppplied to setup an development environment quickly. It's advicesable at this point to make sure Xcode and Xcode developer tools are installed a priori the installation of the brew packages. Xcode can be easily installed from the App Store, the developers tools can be installed by running `xcode-select --install`. Afterwards brew install can be runned with:
+
+	./bootstrap.sh --full-pull
+
 
 ## About
 
