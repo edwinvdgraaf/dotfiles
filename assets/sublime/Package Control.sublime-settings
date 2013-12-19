@@ -1,0 +1,23 @@
+{
+	"auto_upgrade_last_run": null,
+	"installed_packages":
+	[
+		"CoffeeScript",
+		"DocBlockr",
+		"EJS",
+		"Emmet",
+		"Git",
+		"HTML Mustache",
+		"Jimbly's Clipboard History",
+		"JSHint",
+		"MarkdownEditing",
+		"Package Control",
+		"Rails Partial",
+		"Sass",
+		"SublimeOnSaveBuild",
+		"Sublimerge Pro",
+		"Text Pastry",
+		"Theme - Cobalt2",
+		"Theme - Phoenix"
+	]
+}
