@@ -9,8 +9,18 @@ ZSH_THEME="agnoster"
 
 DEFAULT_USER="edwin"
 
+# User configuration
+
+# Load the shell dotfiles, and then some:
+# * ~/.extra can be used for other settings you don’t want to commit.
+for file in ~/.{exports,aliases,functions,extra}; do
+  [ -r "$file" ] && [ -f "$file" ] && source "$file"
+done
+unset file
+
+
 # Paths
-export PATH="/Users/edwin/.bin:/usr/local/share/npm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11R6/bin"
+export PATH="/Users/edwin/.bin:/usr/local/share/npm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11R6/bin:$PATH"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -46,15 +56,9 @@ export PATH="/Users/edwin/.bin:/usr/local/share/npm/bin:/usr/bin:/bin:/usr/sbin:
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git rbenv z)
+plugins=(git z)
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
-
-# Load the shell dotfiles, and then some:
-# * ~/.extra can be used for other settings you don’t want to commit.
-for file in ~/.{exports,aliases,functions,extra}; do
-	[ -r "$file" ] && [ -f "$file" ] && source "$file"
-done
-unset file
+# Load rbenv
+eval "$(rbenv init -)"
