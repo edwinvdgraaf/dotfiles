@@ -17,10 +17,22 @@ installcask imageoptim
 installcask iterm2
 installcask sourcetree
 installcask spotify
-installcask sublime-text
+installcask sublime-text3
 installcask textmate
 installcask the-unarchiver
 installcask transmission
 installcask virtualbox
 installcask vlc
 installcask xquartz
+
+
+sublimeDir="~/Library/Application\ Support/Sublime\ Text\ 3"
+
+# Move sublime settings
+
+# install package control
+echo "Installing package control and syncing settings"
+wget -O ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages/Package\ Control.sublime-package "https://sublime.wbond.net/Package%20Control.sublime-package" 
+# move sublime settings
+cp -R ../assets/sublime/ ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+# move sublime package control settings
