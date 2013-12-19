@@ -2,6 +2,9 @@
 brew tap phinze/homebrew-cask
 brew install brew-cask
 
+# Required for sublime-text3
+brew tap caskroom/versions
+
 function installcask() {
 	brew cask install "${@}" 2> /dev/null
 }
