@@ -19,7 +19,6 @@ function brew() {
 		  sh brew/install.sh
 		fi
 
-
 		# Install brew packages
 		# Let's see if everything is allright
 		if brew doctor; then
