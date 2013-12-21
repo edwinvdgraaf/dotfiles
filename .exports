@@ -1,5 +1,6 @@
-# Make textmate the default editor
-export EDITOR="/usr/local/bin/mate -w"
+# Make textmate the default editor, since I don't use any plugins in textmate
+# its faster then sublime
+export EDITOR="~/.bin/mate -w"
 
 # Prefer US English and use UTF-8
 export LANG="en_US"
