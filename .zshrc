@@ -20,7 +20,7 @@ unset file
 
 
 # Paths
-export PATH="/Users/edwin/.bin:/usr/local/share/npm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11R6/bin:$PATH"
+export PATH="/Users/edwin/.bin:/usr/local/share/npm/bin:/usr/local/lib/node_modules:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11R6/bin:$PATH"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
