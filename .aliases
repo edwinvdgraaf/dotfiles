@@ -125,6 +125,9 @@ alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v exten
 # Quickly open markdown files with iA Writer
 alias ia="open -a 'iA Writer'"
 
+# Quickly open markdown files with Writer Pro
+alias iap="open -a 'Writer Pro'"
+
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
