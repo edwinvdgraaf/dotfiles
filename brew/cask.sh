@@ -32,6 +32,11 @@ sublimeDir="~/Library/Application\ Support/Sublime\ Text\ 3"
 
 # install package control
 echo "Installing package control and syncing settings"
+mkdir ~/Library/Application\ Support/Sublime\ Text\ 3/
+mkdir ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages
+mkdir ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
+mkdir ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+
 wget -O ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages/Package\ Control.sublime-package "https://sublime.wbond.net/Package%20Control.sublime-package" 
 # move sublime settings
 cp -R ../assets/sublime/ ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
