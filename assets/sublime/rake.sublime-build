@@ -1,0 +1,5 @@
+{
+  "cmd": ["rake"],
+  "working_dir": "${project}",
+  "shell": true
+}
