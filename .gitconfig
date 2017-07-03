@@ -93,13 +93,6 @@
 	pushInsteadOf = "git://gist.github.com/"
 [url "git://gist.github.com/"]
 	insteadOf = "gist:"
-[url "git@git.digitpaint.nl:"]
-	insteadOf = "dp:"
-
-
-[user]
-	name = Edwin van der Graaf
-	email = edwin@digitpaint.nl
 
 [push]
 	default = matching
