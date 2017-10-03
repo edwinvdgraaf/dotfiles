@@ -35,7 +35,7 @@
 	dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
 	
         # Force push current branch only
-        fpush = "!git push -f origin \"$(git rev-parse --abbrev-ref HEAD)\""
+	fpush = "!git push origin \"$(git rev-parse --abbrev-ref HEAD)\" --force-with-lease"
 	# Rebase branch to me
 	rebase-here = "!git rebase HEAD $1 #"
 	branch-name = "!git rev-parse --abbrev-ref HEAD"
